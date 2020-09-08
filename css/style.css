@@ -113,7 +113,10 @@ align-items: center;
     }
 
   .header .link:hover,
-  .header .link:focus {color: var(--accent-color);}
+  .header .link:focus {
+  color: var(--accent-color);
+
+}
 
   .link.current:hover::after {color: var(--accent-color);}
           
