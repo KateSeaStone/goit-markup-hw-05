@@ -58,7 +58,7 @@
      <section class="section-hero">
       <div class="section-hero-box">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -449,14 +449,28 @@
                     </svg>
                   </a>
               </li>
-          </ul>
-
+         </ul>
         </div>
-
-        </div>
-
-      
-
+      </div>
     </footer>
+
+<!-- === Модальное окно === -->
+<div class="back-modal-win is-hidden" data-modal>
+  <div class="modal-win">
+    <button type="button" data-modal-close>
+      <svg class="modal-close">
+        <use href="./images/mod_window/sprite-modal-window.svg#icon-close-black-18dp">
+        </use>
+      </svg>
+
+    </button>
+
+  </div>
+
+</div>
+
+<script src="./js/modal.js"></script>
   </body>
+
+
 </html>
