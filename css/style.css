@@ -126,6 +126,10 @@ cursor: pointer;} */
   
   .header .link.current {
     color: var(--accent-color);}
+  
+  .link:hover.current::after {
+    background-color: var(--accent-color);
+  }
 
    
 
@@ -740,6 +744,7 @@ margin-bottom: 20px;
 
 .project-list-item {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -754,7 +759,23 @@ margin-bottom: 20px;
   position: absolute;
   top: 0;
   left: 0;
+  
+
+  /* opacity: 0;
+  overflow: hidden;
+    pointer-events: none; */
+
+  transform: translateY(100%);
+  transition: all 500ms linear;
 }
+.project-list-item:hover .overlay{
+/* opacity: 1;
+overflow: visible;
+pointer-events: unset; */
+
+transform: translateY(0);
+}
+
 
 .overlay-title {
 font-weight: 400;
