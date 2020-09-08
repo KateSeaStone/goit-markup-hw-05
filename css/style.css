@@ -741,6 +741,12 @@ margin-bottom: 20px;
   overflow: hidden;
 }
 
+.project-list-item .title,
+.project-list-item .text {
+
+  overflow: hidden; 
+}
+
 .overlay {
   display: flex;
   justify-content: center;
@@ -753,19 +759,20 @@ margin-bottom: 20px;
   position: absolute;
   top: 0;
   left: 0;
-  
+  /* overflow: hidden; */
+  opacity: 0;
 
-  /* opacity: 0;
-  overflow: hidden;
-    pointer-events: none; */
+  
+   pointer-events: none;
 
   transform: translateY(100%);
   transition: all 500ms linear;
 }
+
 .project-list-item:hover .overlay{
-/* opacity: 1;
+opacity: 1;
 overflow: visible;
-pointer-events: unset; */
+pointer-events: unset;
 
 transform: translateY(0);
 }
